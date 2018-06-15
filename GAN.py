@@ -9,6 +9,7 @@ mnist_images = mnist.train.images
 mnist_labels = mnist.train.labels
 print("Finished downloading.")
 
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 r = 0
 def next_batch(data, size):
